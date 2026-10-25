@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="550" viewBox="0 0 1120 550" role="img" aria-labelledby="title description">
+  <title id="title">sheetdiff demo recording placeholder</title>
+  <desc id="description">Static illustration of a spreadsheet diff. Generate a real animated demo with vhs scripts/demo.tape.</desc>
+  <rect width="1120" height="550" rx="18" fill="#182331"/>
+  <rect width="1120" height="48" rx="18" fill="#243344"/>
+  <path d="M0 30H1120V48H0Z" fill="#243344"/>
+  <circle cx="25" cy="24" r="6" fill="#e88289"/>
+  <circle cx="48" cy="24" r="6" fill="#e6c675"/>
+  <circle cx="71" cy="24" r="6" fill="#75bd97"/>
+  <g font-family="ui-monospace, Consolas, monospace" font-size="19" fill="#d5dfeb">
+    <text x="98" y="31" font-size="14" fill="#a1b3c7">sheetdiff · offline spreadsheet review</text>
+    <text x="30" y="94">$ sheetdiff old.xlsx new.xlsx --context 0</text>
+    <text x="30" y="140" fill="#77d2de">Sheet: Budget (modified)</text>
+    <text x="42" y="188" fill="#e8cb79">[M]   B2  Value: 123 → 456</text>
+    <text x="42" y="230" fill="#e8cb79">[F]   C3  Formula: =SUM(E2:E4) → =SUM(E2:E5)</text>
+    <text x="42" y="272" fill="#d6a0e0">[FMT] D1  Format: bold: false → true</text>
+    <text x="42" y="314" fill="#e99099">[-]   Row 5 (removed): Old project | 999</text>
+    <text x="42" y="356" fill="#87d3aa">[+]   Row 7 (added):   New project | 888</text>
+    <text x="30" y="410" fill="#9db0c7">Summary: values · formulas · formats · rows · sheets</text>
+    <text x="30" y="479" font-size="15" fill="#e8cb79">STATIC PLACEHOLDER — animated recording is not included.</text>
+    <text x="30" y="511" font-size="15" fill="#9db0c7">Record with: vhs scripts/demo.tape  ·  See docs/demo.md</text>
+  </g>
+</svg>

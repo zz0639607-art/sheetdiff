@@ -1,0 +1,23 @@
+--- a: tests\fixtures\budget_v1.xlsx
++++ b: tests\fixtures\budget_v2.xlsx
+
+Sheet: 历史表 (removed)
+  (all 2 rows removed; 4 cells)
+
+Sheet: 新增表 (added)
+  (all 10 rows added; 30 cells)
+
+Sheet: 预算表 (modified)
+ [FMT]  D1                Format: bold: false → true
+ [M]    B2                Value: 123.0 → 456.0
+ [M]    C3                Value: 60.0 → 110.0
+ [F]    C3                Formula: =SUM(E2:E4) → =SUM(E2:E5)
+ [ ]    Context 4/4       A4: 设计费用 | B4: 200.0 | E4: 30.0
+ [-]    Row 5 (removed):  A5: 旧项目 | B5: 999.0 | C5: 12.5 | E5: 40.0
+ [ ]    Context 6/5       A5: 运营费用 | B5: 300.0 | E5: 50.0
+ [ ]    Context 7/6       A6: 测试费用 | B6: 400.0 | E6: 60.0
+ [+]    Row 7 (added):    A7: 新项目 | B7: 888.0 | E7: 80.0
+ [ ]    Context 8/8       A8: 交付费用 | B8: 700.0 | E8: 70.0
+ [M]    B9                Value: 2026-10-24T00:00:00.000 → 2026-10-25T00:00:00.000
+ [ ]    Context 10/10     A10: 备注 | B10: 合成数据，仅用于测试与演示
+Summary: 3 sheets changed | 3 modified / 1 formulas / 1 formats / 33 cells added / 8 cells removed / 11 rows added / 3 rows removed / 1 sheets added / 1 sheets removed

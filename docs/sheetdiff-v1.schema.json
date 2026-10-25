@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sheetdiff/v1 report",
+  "description": "Complete cell-level comparison report. Consumers must tolerate additive fields in version 1.",
+  "type": "object",
+  "required": ["schema", "old", "new", "summary", "sheets", "warnings"],
+  "properties": {
+    "schema": { "const": "sheetdiff/v1" },
+    "old": { "$ref": "#/$defs/file_info" },
+    "new": { "$ref": "#/$defs/file_info" },
+    "summary": { "$ref": "#/$defs/summary" },
+    "sheets": { "type": "array", "items": { "$ref": "#/$defs/sheet_diff" } },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "count": { "type": "integer", "minimum": 0 },
+    "a1": { "type": "string", "pattern": "^[A-Z]+[1-9][0-9]*$" },
+    "nullable_a1": {
+      "anyOf": [{ "$ref": "#/$defs/a1" }, { "type": "null" }]
+    },
+    "file_info": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "additionalProperties": true
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "sheets_changed", "cells_modified", "cells_added", "cells_removed",
+        "formulas_changed", "formats_changed", "rows_added", "rows_removed",
+        "sheets_added", "sheets_removed"
+      ],
+      "properties": {
+        "sheets_changed": { "$ref": "#/$defs/count" },
+        "cells_modified": { "$ref": "#/$defs/count" },
+        "cells_added": { "$ref": "#/$defs/count" },
+        "cells_removed": { "$ref": "#/$defs/count" },
+        "formulas_changed": { "$ref": "#/$defs/count" },
+        "formats_changed": { "$ref": "#/$defs/count" },
+        "rows_added": { "$ref": "#/$defs/count" },
+        "rows_removed": { "$ref": "#/$defs/count" },
+        "sheets_added": { "$ref": "#/$defs/count" },
+        "sheets_removed": { "$ref": "#/$defs/count" }
+      },
+      "additionalProperties": true
+    },
+    "cell": {
+      "type": "object",
+      "required": ["value", "formula", "formatted", "format"],
+      "properties": {
+        "value": {
+          "description": "Normalized scalar; null means an explicitly present empty cell.",
+          "type": ["number", "string", "boolean", "null"]
+        },
+        "formula": { "type": ["string", "null"] },
+        "formatted": { "type": "string" },
+        "format": {
+          "description": "Semantic formatting properties; property values are strings.",
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "nullable_cell": {
+      "anyOf": [{ "$ref": "#/$defs/cell" }, { "type": "null" }]
+    },
+    "change_kind": {
+      "enum": ["modified", "formula_changed", "format_changed", "added", "removed"]
+    },
+    "change": {
+      "type": "object",
+      "required": [
+        "cell", "old_cell", "new_cell", "column_name", "kind", "old", "new", "row_change"
+      ],
+      "properties": {
+        "cell": { "$ref": "#/$defs/a1" },
+        "old_cell": { "$ref": "#/$defs/nullable_a1" },
+        "new_cell": { "$ref": "#/$defs/nullable_a1" },
+        "column_name": { "type": ["string", "null"] },
+        "kind": { "$ref": "#/$defs/change_kind" },
+        "old": { "$ref": "#/$defs/nullable_cell" },
+        "new": { "$ref": "#/$defs/nullable_cell" },
+        "row_change": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "row_cells": {
+      "description": "Sparse object keyed by decimal zero-based column indices.",
+      "type": "object",
+      "propertyNames": { "pattern": "^(0|[1-9][0-9]*)$" },
+      "additionalProperties": { "$ref": "#/$defs/cell" }
+    },
+    "row_change": {
+      "type": "object",
+      "required": ["row", "kind", "cells"],
+      "properties": {
+        "row": { "type": "integer", "minimum": 1 },
+        "kind": { "enum": ["added", "removed"] },
+        "cells": { "$ref": "#/$defs/row_cells" }
+      },
+      "additionalProperties": true
+    },
+    "context_row": {
+      "type": "object",
+      "required": ["old_row", "new_row", "cells"],
+      "properties": {
+        "old_row": { "type": "integer", "minimum": 1 },
+        "new_row": { "type": "integer", "minimum": 1 },
+        "cells": { "$ref": "#/$defs/row_cells" }
+      },
+      "additionalProperties": true
+    },
+    "sheet_diff": {
+      "type": "object",
+      "required": [
+        "name", "status", "changes", "row_changes", "context", "merged_old", "merged_new"
+      ],
+      "properties": {
+        "name": { "type": "string" },
+        "status": { "enum": ["unchanged", "modified", "added", "removed"] },
+        "changes": { "type": "array", "items": { "$ref": "#/$defs/change" } },
+        "row_changes": { "type": "array", "items": { "$ref": "#/$defs/row_change" } },
+        "context": { "type": "array", "items": { "$ref": "#/$defs/context_row" } },
+        "merged_old": { "type": "array", "items": { "type": "string" } },
+        "merged_new": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    }
+  }
+}

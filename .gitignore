@@ -1,0 +1,7 @@
+/target
+/dist
+**/*.rs.bk
+*.pdb
+.DS_Store
+Thumbs.db
+# Keep Cargo.lock for reproducible CLI builds and releases.

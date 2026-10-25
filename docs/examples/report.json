@@ -1,0 +1,2398 @@
+{
+  "schema": "sheetdiff/v1",
+  "old": {
+    "path": "tests\\fixtures\\budget_v1.xlsx",
+    "sha256": "5fa96c4dbab8f1fc11e16e6785ed06e25fe02eeca16681aee151f58963ff4908"
+  },
+  "new": {
+    "path": "tests\\fixtures\\budget_v2.xlsx",
+    "sha256": "fd9d1b92a6d0d8b9e28266131046d7fdbaa717b81d11ef4e0e884c6548ecb3a6"
+  },
+  "summary": {
+    "sheets_changed": 3,
+    "cells_modified": 3,
+    "cells_added": 33,
+    "cells_removed": 8,
+    "formulas_changed": 1,
+    "formats_changed": 1,
+    "rows_added": 11,
+    "rows_removed": 3,
+    "sheets_added": 1,
+    "sheets_removed": 1
+  },
+  "sheets": [
+    {
+      "name": "不变表",
+      "status": "unchanged",
+      "changes": [],
+      "row_changes": [],
+      "context": [],
+      "merged_old": [
+        "A1:B2"
+      ],
+      "merged_new": [
+        "A1:B2"
+      ]
+    },
+    {
+      "name": "历史表",
+      "status": "removed",
+      "changes": [
+        {
+          "cell": "A1",
+          "old_cell": "A1",
+          "new_cell": null,
+          "column_name": null,
+          "kind": "removed",
+          "old": {
+            "value": "历史项目",
+            "formula": null,
+            "formatted": "历史项目",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": null,
+          "row_change": true
+        },
+        {
+          "cell": "B1",
+          "old_cell": "B1",
+          "new_cell": null,
+          "column_name": null,
+          "kind": "removed",
+          "old": {
+            "value": "归档预算",
+            "formula": null,
+            "formatted": "归档预算",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": null,
+          "row_change": true
+        },
+        {
+          "cell": "A2",
+          "old_cell": "A2",
+          "new_cell": null,
+          "column_name": null,
+          "kind": "removed",
+          "old": {
+            "value": "已结束项目",
+            "formula": null,
+            "formatted": "已结束项目",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": null,
+          "row_change": true
+        },
+        {
+          "cell": "B2",
+          "old_cell": "B2",
+          "new_cell": null,
+          "column_name": null,
+          "kind": "removed",
+          "old": {
+            "value": 1000.0,
+            "formula": null,
+            "formatted": "1000.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": null,
+          "row_change": true
+        }
+      ],
+      "row_changes": [
+        {
+          "row": 1,
+          "kind": "removed",
+          "cells": {
+            "0": {
+              "value": "历史项目",
+              "formula": null,
+              "formatted": "历史项目",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": "归档预算",
+              "formula": null,
+              "formatted": "归档预算",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 2,
+          "kind": "removed",
+          "cells": {
+            "0": {
+              "value": "已结束项目",
+              "formula": null,
+              "formatted": "已结束项目",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 1000.0,
+              "formula": null,
+              "formatted": "1000.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        }
+      ],
+      "context": [],
+      "merged_old": [],
+      "merged_new": []
+    },
+    {
+      "name": "新增表",
+      "status": "added",
+      "changes": [
+        {
+          "cell": "A1",
+          "old_cell": null,
+          "new_cell": "A1",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目 1",
+            "formula": null,
+            "formatted": "新项目 1",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B1",
+          "old_cell": null,
+          "new_cell": "B1",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 100.0,
+            "formula": null,
+            "formatted": "100.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "C1",
+          "old_cell": null,
+          "new_cell": "C1",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新增内容",
+            "formula": null,
+            "formatted": "新增内容",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "A2",
+          "old_cell": null,
+          "new_cell": "A2",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目 2",
+            "formula": null,
+            "formatted": "新项目 2",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B2",
+          "old_cell": null,
+          "new_cell": "B2",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 101.0,
+            "formula": null,
+            "formatted": "101.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "C2",
+          "old_cell": null,
+          "new_cell": "C2",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新增内容",
+            "formula": null,
+            "formatted": "新增内容",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "A3",
+          "old_cell": null,
+          "new_cell": "A3",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目 3",
+            "formula": null,
+            "formatted": "新项目 3",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B3",
+          "old_cell": null,
+          "new_cell": "B3",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 102.0,
+            "formula": null,
+            "formatted": "102.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "C3",
+          "old_cell": null,
+          "new_cell": "C3",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新增内容",
+            "formula": null,
+            "formatted": "新增内容",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "A4",
+          "old_cell": null,
+          "new_cell": "A4",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目 4",
+            "formula": null,
+            "formatted": "新项目 4",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B4",
+          "old_cell": null,
+          "new_cell": "B4",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 103.0,
+            "formula": null,
+            "formatted": "103.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "C4",
+          "old_cell": null,
+          "new_cell": "C4",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新增内容",
+            "formula": null,
+            "formatted": "新增内容",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "A5",
+          "old_cell": null,
+          "new_cell": "A5",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目 5",
+            "formula": null,
+            "formatted": "新项目 5",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B5",
+          "old_cell": null,
+          "new_cell": "B5",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 104.0,
+            "formula": null,
+            "formatted": "104.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "C5",
+          "old_cell": null,
+          "new_cell": "C5",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新增内容",
+            "formula": null,
+            "formatted": "新增内容",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "A6",
+          "old_cell": null,
+          "new_cell": "A6",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目 6",
+            "formula": null,
+            "formatted": "新项目 6",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B6",
+          "old_cell": null,
+          "new_cell": "B6",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 105.0,
+            "formula": null,
+            "formatted": "105.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "C6",
+          "old_cell": null,
+          "new_cell": "C6",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新增内容",
+            "formula": null,
+            "formatted": "新增内容",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "A7",
+          "old_cell": null,
+          "new_cell": "A7",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目 7",
+            "formula": null,
+            "formatted": "新项目 7",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B7",
+          "old_cell": null,
+          "new_cell": "B7",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 106.0,
+            "formula": null,
+            "formatted": "106.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "C7",
+          "old_cell": null,
+          "new_cell": "C7",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新增内容",
+            "formula": null,
+            "formatted": "新增内容",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "A8",
+          "old_cell": null,
+          "new_cell": "A8",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目 8",
+            "formula": null,
+            "formatted": "新项目 8",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B8",
+          "old_cell": null,
+          "new_cell": "B8",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 107.0,
+            "formula": null,
+            "formatted": "107.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "C8",
+          "old_cell": null,
+          "new_cell": "C8",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新增内容",
+            "formula": null,
+            "formatted": "新增内容",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "A9",
+          "old_cell": null,
+          "new_cell": "A9",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目 9",
+            "formula": null,
+            "formatted": "新项目 9",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B9",
+          "old_cell": null,
+          "new_cell": "B9",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 108.0,
+            "formula": null,
+            "formatted": "108.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "C9",
+          "old_cell": null,
+          "new_cell": "C9",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新增内容",
+            "formula": null,
+            "formatted": "新增内容",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "A10",
+          "old_cell": null,
+          "new_cell": "A10",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目 10",
+            "formula": null,
+            "formatted": "新项目 10",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B10",
+          "old_cell": null,
+          "new_cell": "B10",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 109.0,
+            "formula": null,
+            "formatted": "109.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "C10",
+          "old_cell": null,
+          "new_cell": "C10",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新增内容",
+            "formula": null,
+            "formatted": "新增内容",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        }
+      ],
+      "row_changes": [
+        {
+          "row": 1,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目 1",
+              "formula": null,
+              "formatted": "新项目 1",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 100.0,
+              "formula": null,
+              "formatted": "100.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": "新增内容",
+              "formula": null,
+              "formatted": "新增内容",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 2,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目 2",
+              "formula": null,
+              "formatted": "新项目 2",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 101.0,
+              "formula": null,
+              "formatted": "101.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": "新增内容",
+              "formula": null,
+              "formatted": "新增内容",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 3,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目 3",
+              "formula": null,
+              "formatted": "新项目 3",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 102.0,
+              "formula": null,
+              "formatted": "102.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": "新增内容",
+              "formula": null,
+              "formatted": "新增内容",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 4,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目 4",
+              "formula": null,
+              "formatted": "新项目 4",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 103.0,
+              "formula": null,
+              "formatted": "103.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": "新增内容",
+              "formula": null,
+              "formatted": "新增内容",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 5,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目 5",
+              "formula": null,
+              "formatted": "新项目 5",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 104.0,
+              "formula": null,
+              "formatted": "104.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": "新增内容",
+              "formula": null,
+              "formatted": "新增内容",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 6,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目 6",
+              "formula": null,
+              "formatted": "新项目 6",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 105.0,
+              "formula": null,
+              "formatted": "105.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": "新增内容",
+              "formula": null,
+              "formatted": "新增内容",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 7,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目 7",
+              "formula": null,
+              "formatted": "新项目 7",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 106.0,
+              "formula": null,
+              "formatted": "106.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": "新增内容",
+              "formula": null,
+              "formatted": "新增内容",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 8,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目 8",
+              "formula": null,
+              "formatted": "新项目 8",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 107.0,
+              "formula": null,
+              "formatted": "107.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": "新增内容",
+              "formula": null,
+              "formatted": "新增内容",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 9,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目 9",
+              "formula": null,
+              "formatted": "新项目 9",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 108.0,
+              "formula": null,
+              "formatted": "108.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": "新增内容",
+              "formula": null,
+              "formatted": "新增内容",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 10,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目 10",
+              "formula": null,
+              "formatted": "新项目 10",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 109.0,
+              "formula": null,
+              "formatted": "109.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": "新增内容",
+              "formula": null,
+              "formatted": "新增内容",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        }
+      ],
+      "context": [],
+      "merged_old": [],
+      "merged_new": []
+    },
+    {
+      "name": "预算表",
+      "status": "modified",
+      "changes": [
+        {
+          "cell": "D1",
+          "old_cell": "D1",
+          "new_cell": "D1",
+          "column_name": null,
+          "kind": "format_changed",
+          "old": {
+            "value": "说明",
+            "formula": null,
+            "formatted": "说明",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": {
+            "value": "说明",
+            "formula": null,
+            "formatted": "说明",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "true",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": false
+        },
+        {
+          "cell": "B2",
+          "old_cell": "B2",
+          "new_cell": "B2",
+          "column_name": null,
+          "kind": "modified",
+          "old": {
+            "value": 123.0,
+            "formula": null,
+            "formatted": "123.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": {
+            "value": 456.0,
+            "formula": null,
+            "formatted": "456.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": false
+        },
+        {
+          "cell": "C3",
+          "old_cell": "C3",
+          "new_cell": "C3",
+          "column_name": null,
+          "kind": "modified",
+          "old": {
+            "value": 60.0,
+            "formula": "=SUM(E2:E4)",
+            "formatted": "60.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": {
+            "value": 110.0,
+            "formula": "=SUM(E2:E5)",
+            "formatted": "110.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": false
+        },
+        {
+          "cell": "C3",
+          "old_cell": "C3",
+          "new_cell": "C3",
+          "column_name": null,
+          "kind": "formula_changed",
+          "old": {
+            "value": 60.0,
+            "formula": "=SUM(E2:E4)",
+            "formatted": "60.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": {
+            "value": 110.0,
+            "formula": "=SUM(E2:E5)",
+            "formatted": "110.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": false
+        },
+        {
+          "cell": "A5",
+          "old_cell": "A5",
+          "new_cell": null,
+          "column_name": null,
+          "kind": "removed",
+          "old": {
+            "value": "旧项目",
+            "formula": null,
+            "formatted": "旧项目",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": null,
+          "row_change": true
+        },
+        {
+          "cell": "B5",
+          "old_cell": "B5",
+          "new_cell": null,
+          "column_name": null,
+          "kind": "removed",
+          "old": {
+            "value": 999.0,
+            "formula": null,
+            "formatted": "999.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": null,
+          "row_change": true
+        },
+        {
+          "cell": "C5",
+          "old_cell": "C5",
+          "new_cell": null,
+          "column_name": null,
+          "kind": "removed",
+          "old": {
+            "value": 12.5,
+            "formula": null,
+            "formatted": "12.5",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": null,
+          "row_change": true
+        },
+        {
+          "cell": "E5",
+          "old_cell": "E5",
+          "new_cell": null,
+          "column_name": null,
+          "kind": "removed",
+          "old": {
+            "value": 40.0,
+            "formula": null,
+            "formatted": "40.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "new": null,
+          "row_change": true
+        },
+        {
+          "cell": "A7",
+          "old_cell": null,
+          "new_cell": "A7",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": "新项目",
+            "formula": null,
+            "formatted": "新项目",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B7",
+          "old_cell": null,
+          "new_cell": "B7",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 888.0,
+            "formula": null,
+            "formatted": "888.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "E7",
+          "old_cell": null,
+          "new_cell": "E7",
+          "column_name": null,
+          "kind": "added",
+          "old": null,
+          "new": {
+            "value": 80.0,
+            "formula": null,
+            "formatted": "80.0",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "General"
+            }
+          },
+          "row_change": true
+        },
+        {
+          "cell": "B9",
+          "old_cell": "B9",
+          "new_cell": "B9",
+          "column_name": null,
+          "kind": "modified",
+          "old": {
+            "value": "2026-10-24T00:00:00.000",
+            "formula": null,
+            "formatted": "2026-10-24T00:00:00.000",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "yyyy-mm-dd"
+            }
+          },
+          "new": {
+            "value": "2026-10-25T00:00:00.000",
+            "formula": null,
+            "formatted": "2026-10-25T00:00:00.000",
+            "format": {
+              "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+              "bold": "false",
+              "fill": "none",
+              "font": "Calibri",
+              "font_color": "#000000",
+              "font_size": "11",
+              "font_strike": "false",
+              "font_underline": "none",
+              "italic": "false",
+              "number_format": "yyyy-mm-dd"
+            }
+          },
+          "row_change": false
+        }
+      ],
+      "row_changes": [
+        {
+          "row": 5,
+          "kind": "removed",
+          "cells": {
+            "0": {
+              "value": "旧项目",
+              "formula": null,
+              "formatted": "旧项目",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 999.0,
+              "formula": null,
+              "formatted": "999.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "2": {
+              "value": 12.5,
+              "formula": null,
+              "formatted": "12.5",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "4": {
+              "value": 40.0,
+              "formula": null,
+              "formatted": "40.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "row": 7,
+          "kind": "added",
+          "cells": {
+            "0": {
+              "value": "新项目",
+              "formula": null,
+              "formatted": "新项目",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 888.0,
+              "formula": null,
+              "formatted": "888.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "4": {
+              "value": 80.0,
+              "formula": null,
+              "formatted": "80.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        }
+      ],
+      "context": [
+        {
+          "old_row": 4,
+          "new_row": 4,
+          "cells": {
+            "0": {
+              "value": "设计费用",
+              "formula": null,
+              "formatted": "设计费用",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 200.0,
+              "formula": null,
+              "formatted": "200.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "4": {
+              "value": 30.0,
+              "formula": null,
+              "formatted": "30.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "old_row": 6,
+          "new_row": 5,
+          "cells": {
+            "0": {
+              "value": "运营费用",
+              "formula": null,
+              "formatted": "运营费用",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 300.0,
+              "formula": null,
+              "formatted": "300.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "4": {
+              "value": 50.0,
+              "formula": null,
+              "formatted": "50.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "old_row": 7,
+          "new_row": 6,
+          "cells": {
+            "0": {
+              "value": "测试费用",
+              "formula": null,
+              "formatted": "测试费用",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 400.0,
+              "formula": null,
+              "formatted": "400.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "4": {
+              "value": 60.0,
+              "formula": null,
+              "formatted": "60.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "old_row": 8,
+          "new_row": 8,
+          "cells": {
+            "0": {
+              "value": "交付费用",
+              "formula": null,
+              "formatted": "交付费用",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": 700.0,
+              "formula": null,
+              "formatted": "700.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "4": {
+              "value": 70.0,
+              "formula": null,
+              "formatted": "70.0",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        },
+        {
+          "old_row": 10,
+          "new_row": 10,
+          "cells": {
+            "0": {
+              "value": "备注",
+              "formula": null,
+              "formatted": "备注",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            },
+            "1": {
+              "value": "合成数据，仅用于测试与演示",
+              "formula": null,
+              "formatted": "合成数据，仅用于测试与演示",
+              "format": {
+                "alignment": "horizontal=general;vertical=bottom;rotation=0;wrap=false;shrink=false;indent=0;relative_indent=0;justify_last=false;reading_order=0",
+                "bold": "false",
+                "fill": "none",
+                "font": "Calibri",
+                "font_color": "#000000",
+                "font_size": "11",
+                "font_strike": "false",
+                "font_underline": "none",
+                "italic": "false",
+                "number_format": "General"
+              }
+            }
+          }
+        }
+      ],
+      "merged_old": [],
+      "merged_new": []
+    }
+  ],
+  "warnings": []
+}
