@@ -16,18 +16,19 @@ The isolated development toolchain and dependencies were downloaded into the tas
 | `cargo test --locked --offline` | Passed. |
 | `cargo build --release --locked --offline` | Passed. |
 | `scripts/build-release.ps1 -Target x86_64-pc-windows-gnu` | Passed; produced a ZIP plus SHA256. |
-| `cargo package --locked --offline --allow-dirty` | Passed verification. Package metadata warns that future repository/homepage/documentation URLs have not been assigned. |
+| `cargo package --locked --offline` | Passed verification after public repository metadata was configured. |
 | Exit codes | Release executable: identical = 0, changed = 1, missing input = 2. |
 | JSON | Parsed by **jq 1.8.2**; required fields checked; full report validated with `docs/sheetdiff-v1.schema.json`. |
 | HTML | Report tests passed: CSS tabs, inline styles, no scripts/external assets, escaping, context, unchanged-sheet fold and truncation. |
 | Chrome visual inspection | **Not completed**: Computer Use stopped because it could not reliably identify the current Windows browser URL. No further browser actions were performed. |
-| Linux/macOS/MSVC jobs | Workflows configured; not executed from this local Windows GNU session. |
+| Hosted Linux/macOS/Windows CI | **Passed**: formatting, clippy and tests on all three operating systems. [CI run](https://github.com/zz0639607-art/sheetdiff/actions/runs/40206145481). |
+| Public report preview | **Passed**: Pages deployment succeeded; downloaded HTML is byte-identical to the checked-in report, and public JSON parses successfully. [Preview](https://zz0639607-art.github.io/sheetdiff/). |
 
-The Windows executable's import table contains only operating-system DLLs; it does not need Rust, Excel, Python, libgcc, or winpthread installed. MSVC builds are configured to link the CRT statically. Linux release builds target musl. Platform-specific release jobs still need their first hosted CI run.
+The local Windows executable's import table contains only operating-system DLLs; it does not need Rust, Excel, Python, libgcc, or winpthread installed. MSVC builds are configured to link the CRT statically. Linux release builds target musl. Release artifacts and their per-platform checksums are published through the separate tag workflow.
 
 The included sample budget report has **3 changed sheets, 3 value events, 1 formula event, 1 format event, 33 cells added, 8 cells removed, 11 rows added, 3 rows removed, 1 sheet added and 1 sheet removed**. Counts include the contents of whole added/removed sheets. The formula's cached result and text are separate events.
 
-最终本地测试为 **66 项通过、0 项失败**；夹具再生成测试默认忽略，但已单独成功运行。演示工作簿、JSON、HTML、Windows 发布二进制与发行 ZIP 均已生成。Chrome 实际视觉验收因工具无法确认浏览器 URL 而未完成；Linux、macOS 和 MSVC 工作流已配置，尚未在此会话中运行。不声称已经发布 crates.io 包或 GitHub Release。
+最终本地测试为 **66 项通过、0 项失败**；夹具再生成测试默认忽略，但已单独成功运行。GitHub 远端 Linux、macOS、Windows 的 fmt、clippy 和测试均已通过；公开 Pages 报告与源文件逐字节一致，在线 JSON 可正常解析。Chrome 实际视觉验收因工具无法确认浏览器 URL 而未完成。crates.io 包尚未发布，GitHub 下载以 Releases 页面为准。
 
 Run the usual commands from the repository root on a machine with Rust stable:
 
